@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text" name="num1" placeholder="Введите первое число", style="font-size: 20px;"">
+        <select name="operation", style="font-size: 20px;">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="num2" placeholder="Введите второе число", style="font-size: 20px;"><br><br>
+        <input type="submit" value="Рассчитать">
+        <button><a href="{{ url_for('index') }}">На Главную</a> </button>
+    </form>
+
+</body>
+</html>

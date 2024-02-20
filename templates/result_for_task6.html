@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>
+        {% if age[-1] == '1' and age[0] != '1' %}
+        {{ name }}, Вам {{ age }} год.
+        {% elif age[-1] in '234' and age[0] != '1' %}
+        {{ name }}, Вам {{ age }} года.
+        {% else %}
+        {{ name }}, Вам {{ age }} лет.
+        {% endif %}
+    </h1>
+    <button><a href="{{ url_for('task6') }}">Назад</a> </button>
+    <button><a href="{{ url_for('index') }}">На Главную</a> </button>
+</body>
+</html>
